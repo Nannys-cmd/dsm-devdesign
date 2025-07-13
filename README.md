@@ -28,7 +28,7 @@ Todo con una estética única, moderna y accesible para que tu proyecto brille �
 ## 🌐 Demo online
 
 - 🔗 GitHub Pages: [https://nannys-cmd.github.io/dsm-devdesign/](https://nannys-cmd.github.io/dsm-devdesign/)
-- 🔗 Netlify: *(próximamente)*
+- 🔗 Netlify: [https://dsm-devdesign.netlify.app/](https://dsm-devdesign.netlify.app/)
 
 ---
 
