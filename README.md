@@ -40,7 +40,6 @@ Todo con una estética única, moderna y accesible para que tu proyecto brille �
 ├── logo-dsm1.png
 └── README.md
 
-
 ---
 
 ## 💡 Autoras
