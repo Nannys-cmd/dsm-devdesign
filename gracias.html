@@ -1,14 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gracias</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gracias 💌</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(270deg, #0a1218, #16282e, #1f3947, #16282e, #0a1218);
+      background-size: 1200% 1200%;
+      animation: gradientBG 30s ease infinite;
+      color: #E5E5E5;
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #00ffff;
+      margin-bottom: 20px;
+      text-shadow: 0 0 8px #00ffffaa;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #CFCFCF;
+      margin-bottom: 30px;
+      max-width: 600px;
+    }
+
+    a.btn {
+      background-color: #00ffff;
+      color: #101418;
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    a.btn:hover {
+      background-color: #00d4d4;
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #00ffffaa;
+    }
+  </style>
 </head>
-<body class="container">
-  <h2 style="margin-top: 100px; color: #00ffff;">¡Gracias por escribirnos! 💌</h2>
-  <p>Te responderemos lo antes posible. ¡Nos encanta saber de vos! 🫶</p>
-  <a href="index.html" class="btn" style="margin-top: 30px;">Volver al inicio</a>
+<body>
+  <h1>💌 ¡Gracias por escribirnos!</h1>
+  <p>Muy pronto una de nosotras se va a poner en contacto con vos. Gracias por confiar en <strong>DSM Dev&Design</strong>.</p>
+  <a href="index.html" class="btn">← Volver al sitio</a>
 </body>
 </html>
+
