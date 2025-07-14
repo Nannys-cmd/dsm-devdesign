@@ -177,32 +177,15 @@
         </div>
     </section>
 
-    <!-- CONTACTO -->
-    <section class="section contact" id="contacto" data-aos="fade-up">
-        <div class="container">
-            <h2>Contacto</h2>
-            <p>¿Querés que te ayudemos con tu marca? Completá este formulario:</p>
-            <!-- FORMULARIO DE CONTACTO (Netlify friendly 😘) -->
-            <form name="contacto" method="POST" netlify action="gracias.html" class="contact-form">
-                <input type="hidden" name="form-name" value="contacto" />
+   <!-- CONTACTO -->
+<section class="section contact" id="contacto" data-aos="fade-up">
+  <div class="container">
+    <h2>Contacto</h2>
+    <p>¿Querés que te ayudemos con tu marca? Podés escribirnos directamente por <strong>WhatsApp</strong> o por <strong>email</strong>.</p>
 
-                <input type="text" name="nombre" placeholder="Tu nombre" required>
-                <input type="email" name="email" placeholder="Tu email" required>
-                <textarea name="mensaje" rows="5" placeholder="Escribí tu mensaje..." required></textarea>
-
-                <button type="submit" class="btn">Enviar</button>
-            </form>
-
-            <!-- 👻 Truco para que Netlify registre el formulario en el primer deploy -->
-            <form name="contacto" netlify hidden>
-                <input type="text" name="nombre">
-                <input type="email" name="email">
-                <textarea name="mensaje"></textarea>
-            </form>
-
-
-        </div>
-    </section>
+    <a href="mailto:dsmdevdesign@gmail.com" class="btn">📧 Escribinos por mail</a>
+  </div>
+</section>
 
 
     <!-- FOOTER -->
