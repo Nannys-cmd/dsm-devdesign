@@ -67,7 +67,7 @@ body {
 
 /* HERO */
 .hero {
-  background: linear-gradient(to right, #1A1F24, #0F1217);
+  background: url(fondo.png) no-repeat center center/cover;
   text-align: center;
   padding: 120px 20px 100px;
 }
