@@ -104,7 +104,7 @@ section h2, section h3 {
   color: #00FFFF;
   font-size: 2rem;
   margin-bottom: 20px;
-  text-shadow: 0 0 8px #00ffff88; /* glow sutil */
+  text-shadow: 0 0 8px #00ffff88;
 }
 section p {
   font-size: 1.1rem;
@@ -135,11 +135,6 @@ section p {
   color: #00FFFF;
   margin-bottom: 10px;
 }
-.plan-desc {
-  color: #CFCFCF;
-  margin-bottom: 8px;
-}
-/* Cambio amarillo a coral con glow en hover */
 .plan-price {
   color: #FF6F61;
   font-size: 1.2rem;
@@ -192,7 +187,6 @@ section p {
   color: #CCC;
   margin-bottom: 10px;
 }
-/* Cambio amarillo a coral con glow en hover */
 .card span {
   color: #FF6F61;
   font-weight: bold;
@@ -206,33 +200,53 @@ section p {
 
 /* CONTACTO */
 .contact {
-  padding-bottom: 180px; /* más espacio para que no se superponga */
+  padding-bottom: 180px;
 }
-.contact .btn {
-  margin-top: 20px;
-}
-.contact-form {
+.contact-buttons {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+  justify-content: center;
   margin-top: 30px;
 }
-.contact-form input,
-.contact-form textarea {
-  padding: 12px;
-  border-radius: 8px;
-  border: none;
+.email-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-size: 1rem;
-  background-color: #2D2D2D;
-  color: #fff;
+  background: linear-gradient(45deg, #00ffff, #ff6f61, #00ffff);
+  background-size: 300% 300%;
+  color: #101418;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: pulseGlow 3s infinite, gradientShift 6s ease infinite;
+  box-shadow: 0 0 10px #00ffff44;
 }
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  color: #bbb;
+.email-btn:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 20px #ff6f61aa, 0 0 30px #00ffff88;
 }
-.contact-form button {
-  align-self: flex-start;
-  cursor: pointer;
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 10px #ff6f61aa, 0 0 20px #00ffff88;
+  }
+  50% {
+    box-shadow: 0 0 20px #ff6f61ee, 0 0 30px #00ffffcc;
+  }
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@media (max-width: 600px) {
+  .email-btn {
+    font-size: 0.95rem;
+    padding: 10px 20px;
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 /* FOOTER */
@@ -247,7 +261,7 @@ footer {
 /* FLECHA FLOTANTE */
 .scroll-top {
   position: fixed;
-  bottom: 90px; /* arriba del botón de WhatsApp */
+  bottom: 90px;
   right: 20px;
   background-color: #00ffff;
   color: #101418;
@@ -264,12 +278,11 @@ footer {
 .scroll-top:hover {
   background-color: #00cccc;
 }
-/* Mostrar solo cuando se hace scroll */
 body.scrolled .scroll-top {
   opacity: 1;
 }
 
-/* BOTÓN FLOTANTE DE WHATSAPP */
+/* BOTÓN WHATSAPP */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
