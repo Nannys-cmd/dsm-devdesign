@@ -198,6 +198,12 @@ section p {
   text-shadow: 0 0 8px #ff483baa;
 }
 
+.note {
+  margin-top: 40px;
+  font-style: italic;
+  display: block;
+}
+
 /* CONTACTO */
 .contact {
   padding-bottom: 180px;
